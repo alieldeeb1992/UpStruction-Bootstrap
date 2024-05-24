@@ -13,11 +13,11 @@ html {
 
 .scroll {
   position: relative;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .scroll button {
-  transition: .8s;
+  transition: 0.8s;
   width: 40px;
   height: 55px;
   background-color: var(--accent-color);
@@ -41,11 +41,9 @@ html {
   font-weight: 900;
   z-index: 7;
   font-size: 30px;
-
-
 }
 
-@media (max-width:575px) {
+@media (max-width: 575px) {
   .scroll button {
     display: none;
   }
@@ -140,7 +138,6 @@ html {
 .nav .navbar .d-flex:hover {
   color: var(--accent-color);
 }
-
 
 .navbar div {
   width: 100%;
@@ -237,7 +234,6 @@ html {
 
 .qoute textarea:focus {
   outline: none;
-
 }
 
 .with-after::after {
@@ -289,6 +285,16 @@ html {
   width: 212.66px;
   height: 300px;
   object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .constructions .container .row div > div {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .constructions .container .row div > div img {
+    width: 100%;
+  }
 }
 
 /* End Constructions */
@@ -371,9 +377,7 @@ html {
 .with-icon {
   position: relative;
   margin-bottom: 30px !important;
-
 }
-
 
 .with-icon::before {
   content: "\f560";
@@ -407,7 +411,6 @@ html {
   transform: translateX(-50%);
 }
 
-
 .rest-features-heading .col.active::after {
   content: "";
   position: absolute;
@@ -418,7 +421,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 /* End Features */
 /* Start Projects */
@@ -435,53 +437,47 @@ html {
 }
 
 .projects-list ul li.active {
-
   color: var(--accent-color);
 }
 
 .projects-list ul li:hover {
-
   color: var(--accent-color);
 }
 
-.projects .container .row>div .img {
+.projects .container .row > div .img {
   transition: ease-in-out 1s !important;
   overflow: hidden;
 }
 
-.projects .container .row>div .img .upper-elements {
+.projects .container .row > div .img .upper-elements {
   background-color: rgba(0, 0, 0, 0.368) !important;
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
-.projects .container .row>div:hover .upper-elements {
-  transition: .5s;
+.projects .container .row > div:hover .upper-elements {
+  transition: 0.5s;
 
   display: flex !important;
   background-color: rgba(0, 0, 0, 0.368) !important;
   opacity: 1;
-
 }
 
-.projects .container .row>div:hover img {
+.projects .container .row > div:hover img {
   transition: ease-in-out 1s;
   transform: scale(1.1);
 }
 
-.projects .container .row>div i {
-  transition: ease-in-out .5s;
+.projects .container .row > div i {
+  transition: ease-in-out 0.5s;
 }
 
-.projects .container .row>div i:hover {
+.projects .container .row > div i:hover {
   cursor: pointer;
   color: var(--accent-color) !important;
 }
 
-
 .projects .container ul li a:hover {
   color: var(--accent-color);
-
 }
 
 /* End Projects */
@@ -489,17 +485,14 @@ html {
 .testimonials img {
   width: 75px;
   height: 75px;
-
 }
 
 .testimonials .img {
   left: -42px;
   top: 12px;
-
 }
 
-@media(max-width:575px) {
-
+@media (max-width: 575px) {
   .testimonials .row {
     align-self: center !important;
     max-width: 420px !important;
@@ -513,7 +506,6 @@ html {
   .testimonials .left-one .left-section .sec-data {
     margin: 0 !important;
     padding: 0 !important;
-
   }
 
   .testimonials .left-one .left-section .img img {
@@ -526,7 +518,7 @@ html {
 
 .recent .img {
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .recent .img span {
@@ -541,7 +533,6 @@ html {
   transform: scale(1.08);
   transform: rotate(3deg);
   transition: 2s;
-
 }
 
 .recent .icons::after {
@@ -576,7 +567,6 @@ html {
   background-image: url(../images/footer-bg.jpg);
   background-size: cover;
 }
-
 
 footer::before {
   position: absolute;
